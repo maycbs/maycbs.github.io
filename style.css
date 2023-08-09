@@ -2,43 +2,45 @@
 
 * {
     margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 }
 
 body {
-    background-image: url('images/dna-bg.jpg');
+    background: #01123681 url('images/dna-bg.jpg');
+    background-blend-mode: multiply;
 }
 
 header{
     position: relative;
     min-height: 150px;
-    background-image: url('images/pcr-calculator.jpg');
-    background-color: rgba(0, 0, 0, 0.40);
+    background-image: url('images/pcr-calculator.jpg');    
+    background-size: cover;
+    background-color: #01123681;
     background-blend-mode: multiply;
     box-shadow: 1px 1px 3px;
 }
 
 h1 {
     font-family: 'Goldman', cursive;
-    font-size: 2em;
+    font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    filter: brightness(100%);
     text-shadow: 2px 2px 10px black;
 }
 
 main {
     background-color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1em;
     margin-left: 40px;
     margin-right: 40px;
     padding: 30px 10px;
     text-align: justify;
-    box-shadow: 0px 0px 10px #011236a5;
+    box-shadow: 0px 0px 10px #011236cc;
 }
 
 section {
@@ -49,7 +51,7 @@ section {
 input[type='number'] {
     width: 50px;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: inset 0px 0px 5px #011236a5;
     padding: 5px 3px;
     text-align: center;
@@ -58,13 +60,6 @@ input[type='number'] {
 
 input:focus-visible {
     outline:solid 1px #011848;
-}
-
-
-input::placeholder {
-    font-size: 1em;
-    font-style: italic;
-    text-align: center;
 }
 
 table {
